@@ -21,16 +21,14 @@ import Parallax from "components/Parallax/Parallax.js";
 import profile from "assets/img/faces/vedant.jpeg";
 
 
-import Agripool from "./ProjectInfo/Agripool";
-import CMS from "./ProjectInfo/CMS"
-import PredictQ from "./ProjectInfo/PredictQ";
-import Sat from "./ProjectInfo/Sat"
-import DRL from "./ProjectInfo/DRL";
+import CodeCell from "./ExperienceInfo/CodeCell";
+import Sat from "./ExperienceInfo/Sat"
+import Education from "./ExperienceInfo/Education";
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 
 const useStyles = makeStyles(styles);
 
-export default function ProjectPage(props) {
+export default function ExperiencePage(props) {
   const classes = useStyles();
   const { ...rest } = props;
   const imageClasses = classNames(
@@ -73,54 +71,36 @@ export default function ProjectPage(props) {
                 </div>
               </GridItem>
             </GridContainer>
-            <div className={classes.description}>
-              <p>
-                I have worked on various projects, 
-                here is the details of my previous projects as well as my current projects.
-              </p>
-            </div>
+          
             <GridContainer justify="center" algin="center">
               <GridItem xs={12} sm={12} md={12}  className={classes.navWrapper}>
                 <NavPills
                   alignCenter
-                  color="info"
+                  color="warning"
                   
                   tabs={[
                     {
-                      tabButton: "AgriPool",
+                      tabButton: "Code Cell",
                       tabIcon: Camera,
                       tabContent: (
-                        <Agripool/>
+                        <CodeCell/>
                       ),
                     },
                     {
-                      tabButton: "CMS",
+                      tabButton: "Space Program",
                       tabIcon: Favorite,
-                      tabContent: (<CMS/>
+                      tabContent: (<Sat/>
                       ),
                     },
                     {
-                      tabButton: "Auditory Analysis Using DRL",
+                      tabButton: "Education",
                       tabIcon: Camera,
                       tabContent: (
-                        <DRL/>
+                        <Education/>
                       ),
                     },
                     
-                    {
-                      tabButton: "PredictQ",
-                      tabIcon: Palette,
-                      tabContent: (
-                        <PredictQ/>
-                      ),
-                    },
-                    {
-                      tabButton: "Firmware for Student Sat",
-                      tabIcon: Favorite,
-                      tabContent: (
-                        <Sat/>
-                      ),
-                    },
+                    
                   
                   ]}
                 />

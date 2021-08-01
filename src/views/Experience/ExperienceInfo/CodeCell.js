@@ -37,13 +37,13 @@ import CardHeader from "components/Card/CardHeader.js";
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 
 const useStyles = makeStyles(styles);
-export default function Agripool(props) {
+export default function CodeCell(props) {
   const classes = useStyles();
   const { ...rest } = props;
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
   return (
     <div>
-      <GridContainer container spacing={6} justify="center">
+      {/* <GridContainer container spacing={6} justify="center">
         <GridItem xs={5} sm={3} md={1}>
           <Box borderColor="grey.300" borderRadius="5%" border={1}>
             <img alt="..." src={agri1} className={navImageClasses} />
@@ -85,56 +85,60 @@ export default function Agripool(props) {
             <img alt="..." src={agri7} className={navImageClasses} />
           </Box>
         </GridItem>
-      </GridContainer>
+      </GridContainer> */}
 
       <GridContainer
-      container spacing={6}
+        container
+        spacing={6}
         justifyContent="center"
         alignItems="center"
         justify="center"
       >
-        <GridItem xs={11} sm={8} md={4}>
+        <GridItem xs={11} sm={8} md={3}>
           <Card>
-            <CardHeader color="danger"> Project description</CardHeader>
+            <CardHeader color="danger">Head of CodeCell</CardHeader>
             <CardBody align="justify">
-              Agripool is a cross-platform native application. This is an app
-              that connects the farmers to the transporters. The aim was to make
-              sure that a transporter's truck never leaves half filled from the
-              village when going to the wholesale market. This ensures
-              significant gains to the transporters and reduced transportation
-              expenses for the farmers. In simple terms, it is uberpool for
-              farmers.
+              Youngest appointed head to the CodeCell in the history of my
+              college. I was also CodeChef Campus lead(President) for my club.
             </CardBody>
           </Card>
         </GridItem>
-        <GridItem xs={11} sm={8} md={4}>
+        <GridItem xs={11} sm={8} md={3}>
           <Card>
-            <CardHeader color="danger"> My work</CardHeader>
+            <CardHeader color="danger">
+              Improving Coding Cultre of my college
+            </CardHeader>
             <CardBody align="justify">
-              My team used flutter to build this application. I worked on
-              multiple pages. Most of the work done here was on front-end. I,
-              along with my teammates (
-              <a href="https://www.linkedin.com/in/mohil-khare/">Mohil</a>,
-              <a href="https://www.linkedin.com/in/jaideep-more-a9733015a/">
-                {" "}
-                Jaideep
-              </a>
-              ,
-              <a href="https://www.linkedin.com/in/keshav-mishra-912728173/">
-                {" "}
-                Keshav
-              </a>
-              , ) participated in VCET hackathon with this project. We were the
-              2nd runner up. Refer the github for more info.
-              <IconButton>
-                <GitHub
-                  color="primary"
-                  onClick={() =>
-                    window.open("https://github.com/Phoenix009/AgriPool")
-                  }
-                  href="https://material-ui.com/api/icon/"
-                />
-              </IconButton>
+              When I stared, there were only 2 members left in the club, right
+              now there are more than 70+ active members. I have helped in
+              creating, promoting and developing CP culture in my college.
+            </CardBody>
+          </Card>
+        </GridItem>
+      </GridContainer>
+      <GridContainer
+        container
+        spacing={6}
+        justifyContent="center"
+        alignItems="center"
+        justify="center"
+      >
+        <GridItem xs={11} sm={8} md={3}>
+          <Card>
+            <CardHeader color="danger">Organizing Global events</CardHeader>
+            <CardBody align="justify">
+              Organized and hosted 2 Global long contest with 5000+ participant
+              combined, one of the largest Woman’s Coding Contest and offline
+              ICPC styled contest.
+            </CardBody>
+          </Card>
+        </GridItem>
+        <GridItem xs={11} sm={8} md={3}>
+          <Card>
+            <CardHeader color="danger">Main Speaker for events</CardHeader>
+            <CardBody align="justify">
+              Keynote Speaker for Algo Talks. Main speaker and organizer for
+              various small size events for the club too.
             </CardBody>
           </Card>
         </GridItem>

@@ -22,9 +22,7 @@ import { Apps, LinkedIn, Instagram, GitHub } from "@material-ui/icons";
 import profile from "assets/img/faces/vedant.jpeg";
 import Box from "@material-ui/core/Box";
 
-import CMS1 from "assets/img/CMS/admin.png";
-import CMS2 from "assets/img/CMS/attendance.png";
-import CMS3 from "assets/img/CMS/vendors.png";
+import S1 from "assets/img/sat.jpg";
 
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
@@ -33,31 +31,12 @@ import CardHeader from "components/Card/CardHeader.js";
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 
 const useStyles = makeStyles(styles);
-export default function CMS(props) {
+export default function Sat(props) {
   const classes = useStyles();
   const { ...rest } = props;
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
   return (
     <div>
-      <GridContainer container spacing={6} justify="center">
-        <GridItem xs={12} sm={3} md={3}>
-          <Box borderColor="grey.300" borderRadius="5%" border={1}>
-            <img alt="..." src={CMS1} className={navImageClasses} />
-          </Box>
-        </GridItem>
-
-        <GridItem xs={12} sm={3} md={3}>
-          <Box borderColor="grey.300" borderRadius="5%" border={1}>
-            <img alt="..." src={CMS3} className={navImageClasses} />
-          </Box>
-        </GridItem>
-        <GridItem xs={8} sm={3} md={1}>
-          <Box borderColor="grey.300" borderRadius="5%" border={1}>
-            <img alt="..." src={CMS2} className={navImageClasses} />
-          </Box>
-        </GridItem>
-      </GridContainer>
-
       <GridContainer
         container
         spacing={6}
@@ -67,30 +46,23 @@ export default function CMS(props) {
       >
         <GridItem xs={11} sm={8} md={4}>
           <Card>
-            <CardHeader color="danger"> Project description</CardHeader>
+            <CardHeader color="danger"> Technical work</CardHeader>
             <CardBody align="justify">
-              This Application helps automate attendance and billing reuired by
-              CMS, for the gunmen they hire. CMS hires gunmen when trasporting
-              money to an ATM. This app takes biometric id of the gunmen
-              (instead signing in a register) when starting a trip. This gets
-              registered in the system. At the end of the month, attendace and
-              bill is send to vendors of the gunmen.
+              Building the firmware from scratch for ’BeliefSat. BelifSat is
+              pocket-cube satellite which is expected to be laun
             </CardBody>
           </Card>
         </GridItem>
         <GridItem xs={11} sm={8} md={4}>
           <Card>
-            <CardHeader color="danger"> My work</CardHeader>
+            <CardHeader color="danger"> Management work</CardHeader>
             <CardBody align="justify">
-              I worked with react on the frontend of the application. I worked
-              on almost all of the pages. This was problem set 2 for Code
-              Adventure 3.0 (a one month long hackathon). We were the received
-              BEST UI and First Prize for this hackahon.
+            I supervise and manage the team working on the firmware
               <IconButton>
                 <GitHub
                   color="primary"
                   onClick={() =>
-                    window.open("https://github.com/mustankap/CMS")
+                    window.open("https://github.com/NewLeapKjsieit/BeliefSat")
                   }
                 />
               </IconButton>

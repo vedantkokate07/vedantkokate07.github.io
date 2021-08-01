@@ -22,10 +22,7 @@ import { Apps, LinkedIn, Instagram, GitHub } from "@material-ui/icons";
 import profile from "assets/img/faces/vedant.jpeg";
 import Box from "@material-ui/core/Box";
 
-import P1 from "assets/img/predictQ/dashboard.PNG";
-import P2 from "assets/img/predictQ/home.PNG";
-import P3 from "assets/img/predictQ/queue_dashboard.PNG";
-import P4 from "assets/img/predictQ/patients_view.PNG";
+import D1 from "assets/img/drl.jpg";
 
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
@@ -34,7 +31,7 @@ import CardHeader from "components/Card/CardHeader.js";
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 
 const useStyles = makeStyles(styles);
-export default function PredictQ(props) {
+export default function DRL(props) {
   const classes = useStyles();
   const { ...rest } = props;
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
@@ -43,23 +40,7 @@ export default function PredictQ(props) {
       <GridContainer container spacing={6} justify="center">
         <GridItem xs={12} sm={3} md={3}>
           <Box borderColor="grey.300" borderRadius="5%" border={1}>
-            <img alt="..." src={P1} className={navImageClasses} />
-          </Box>
-        </GridItem>
-
-        <GridItem xs={12} sm={3} md={3}>
-          <Box borderColor="grey.300" borderRadius="5%" border={1}>
-            <img alt="..." src={P3} className={navImageClasses} />
-          </Box>
-        </GridItem>
-        <GridItem xs={12} sm={3} md={3}>
-          <Box borderColor="grey.300" borderRadius="5%" border={1}>
-            <img alt="..." src={P2} className={navImageClasses} />
-          </Box>
-        </GridItem>
-        <GridItem xs={8} sm={3} md={1}>
-          <Box borderColor="grey.300" borderRadius="5%" border={1}>
-            <img alt="..." src={P4} className={navImageClasses} />
+            <img alt="..." src={D1} className={navImageClasses} />
           </Box>
         </GridItem>
       </GridContainer>
@@ -75,11 +56,12 @@ export default function PredictQ(props) {
           <Card>
             <CardHeader color="danger"> Project description</CardHeader>
             <CardBody align="justify">
-              This Webapp will be used by hospitals and clinics, but it's domain
-              is versite enought to fit anywhere which requires queue
-              prediction. This app provied accurate time required for patient's
-              turn to show up in an hospital. It also tells time reuqired for
-              each taks in the hospital like billing, buying medicine, etc.
+              We plan to analyse voice patterns for various kinds of emotions,
+              which would include rudeness, satire, confidance, happiness,
+              sadness and many more. We plan to test Deep Reinforcement learning
+              in this feild. The dataset would be created by us(as no dataset is
+              currently available). We plan to use this to train individuals in
+              their speaking skills.
             </CardBody>
           </Card>
         </GridItem>
@@ -87,25 +69,27 @@ export default function PredictQ(props) {
           <Card>
             <CardHeader color="danger"> My work</CardHeader>
             <CardBody align="justify">
-              This was a problem statement of{" "}
-              <a href="https://deepblue.co.in/about/"></a>Project DeepBlue (3
-              months long hackathon). As data is not avaiable for this kind of
-              problem statement, I worked on simulating the data, ML model for queue time prediction
-             and the front end of this project. We were semifinalist for this hackathon.
-             Refer Github repo for information.
-              <IconButton>
+              This is my Final year project along with{" "}
+              <a href="https://www.linkedin.com/in/mustansir-kapasi-43a521168/">
+                Mustansir
+              </a>{" "}
+              and{" "}
+              <a href="https://www.linkedin.com/in/arghyadeep-k-14b06b15a/">
+                ArghyaDeep
+              </a>
+              . We are currently in research phase. I would be working on the
+              Model and dataset creation.
+              {/* <IconButton>
                 <GitHub
                   color="primary"
                   onClick={() =>
-                    window.open("https://github.com/Phoenix009/DeepBlue-PQWT")
+                    window.open("https://github.com/NewLeapKjsieit/BeliefSat")
                   }
                 />
-              </IconButton>
+              </IconButton> */}
             </CardBody>
-          </Card>       
-            
+          </Card>
         </GridItem>
-        
       </GridContainer>
     </div>
   );

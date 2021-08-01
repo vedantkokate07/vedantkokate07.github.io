@@ -7,6 +7,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Camera from "@material-ui/icons/Camera";
 import Palette from "@material-ui/icons/Palette";
 import Favorite from "@material-ui/icons/Favorite";
+import { Link } from "react-router-dom";
+import ButtonBase from "@material-ui/core/ButtonBase";
 // core components
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
@@ -16,26 +18,21 @@ import GridItem from "components/Grid/GridItem.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import NavPills from "components/NavPills/NavPills.js";
 import Parallax from "components/Parallax/Parallax.js";
+import Box from "@material-ui/core/Box";
 
-import profile from "assets/img/faces/christian.jpg";
-
-import studio1 from "assets/img/examples/studio-1.jpg";
-import studio2 from "assets/img/examples/studio-2.jpg";
-import studio3 from "assets/img/examples/studio-3.jpg";
-import studio4 from "assets/img/examples/studio-4.jpg";
-import studio5 from "assets/img/examples/studio-5.jpg";
-import work1 from "assets/img/examples/olu-eletu.jpg";
-import work2 from "assets/img/examples/clem-onojeghuo.jpg";
-import work3 from "assets/img/examples/cynthia-del-rio.jpg";
-import work4 from "assets/img/examples/mariya-georgieva.jpg";
-import work5 from "assets/img/examples/clem-onojegaw.jpg";
-
+import CardActions from "@material-ui/core/CardActions";
+import CardContent from "@material-ui/core/CardContent";
+import profile from "assets/img/faces/vedant.jpeg";
+import Card from "components/Card/Card.js";
+import CardBody from "components/Card/CardBody.js";
+import CardHeader from "components/Card/CardHeader.js";
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 
 const useStyles = makeStyles(styles);
 
 export default function ProfilePage(props) {
   const classes = useStyles();
+  const classes2 = useStyles2();
   const { ...rest } = props;
   const imageClasses = classNames(
     classes.imgRaised,
@@ -52,7 +49,7 @@ export default function ProfilePage(props) {
         fixed
         changeColorOnScroll={{
           height: 200,
-          color: "dark",
+          color: "white",
         }}
         {...rest}
       />
@@ -71,143 +68,87 @@ export default function ProfilePage(props) {
                     <img src={profile} alt="..." className={imageClasses} />
                   </div>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Christian Louboutin</h3>
-                    <h6>DESIGNER</h6>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-twitter"} />
-                    </Button>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-instagram"} />
-                    </Button>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-facebook"} />
-                    </Button>
+                    <h3 className={classes.title}>Vedant Kokate</h3>
+                    <h6>Competitive Programer | Python</h6>
+                 
+                
                   </div>
                 </div>
               </GridItem>
             </GridContainer>
             <div className={classes.description}>
-              <p>
-                An artist of considerable range, Chet Faker — the name taken by
-                Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-                and records all of his own music, giving it a warm, intimate
-                feel with a solid groove structure.{" "}
+              <p align="justify">
+                I started Coding at age 15. Build an Chess AI at age 16. I have
+                solved around 700 problems across all CP platforms. I like
+                problem solving, and love maths. I am active on Project Euler. I
+                have headed and managed the Codecell of my college as well as Programming cell
+                of Student satellite for two years. Apart from this, I have
+                raised money for charities through various chess events.{" "}
               </p>
             </div>
-            <GridContainer justify="center">
-              <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
-                <NavPills
-                  alignCenter
-                  color="primary"
-                  tabs={[
-                    {
-                      tabButton: "Studio",
-                      tabIcon: Camera,
-                      tabContent: (
-                        <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={studio1}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio2}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={studio5}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio4}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                        </GridContainer>
-                      ),
-                    },
-                    {
-                      tabButton: "Work",
-                      tabIcon: Palette,
-                      tabContent: (
-                        <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work1}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work2}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work3}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work4}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work5}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                        </GridContainer>
-                      ),
-                    },
-                    {
-                      tabButton: "Favorite",
-                      tabIcon: Favorite,
-                      tabContent: (
-                        <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work4}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio3}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work2}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work1}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio1}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                        </GridContainer>
-                      ),
-                    },
-                  ]}
-                />
+            
+            <GridContainer
+              justify="center"
+              algin="center"
+              style={{ margin: "10px auto 10px auto" }}
+            >
+              <GridItem xs={12} sm={12} md={4}>
+                <Link to="/project-page">
+                  <Card>
+                    <CardHeader color="danger" align="center">
+                      <h3>My Projects</h3>
+                      <h3></h3>
+                    </CardHeader>
+                    <CardBody align="center">
+                      Detailed list of my project. Click here
+                    </CardBody>
+                  </Card>
+                </Link>
+              </GridItem>
+              <GridItem xs={12} sm={12} md={4}>
+                <Link to="/project-page">
+                  <Card>
+                    <CardHeader color="warning" align="center">
+                      <h3>Experience</h3>
+                      <h3></h3>
+                    </CardHeader>
+                    <CardBody align="center">
+                      Detailed list of my project. Click here
+                    </CardBody>
+                  </Card>
+                </Link>
+              </GridItem>
+            </GridContainer>
+            <GridContainer
+              justify="center"
+              algin="center"
+              style={{ margin: "10px auto 10px auto" }}
+            >
+              <GridItem xs={12} sm={12} md={4}>
+                <Link to="/project-page">
+                  <Card>
+                    <CardHeader color="primary" align="center">
+                      {" "}
+                      <h3>Competitive Programming</h3>
+                    </CardHeader>
+                    <CardBody align="center">
+                      Detailed list of my project. Click here
+                    </CardBody>
+                  </Card>
+                </Link>
+              </GridItem>
+              <GridItem xs={12} sm={12} md={4}>
+                <Link to="/project-page">
+                  <Card>
+                    <CardHeader color="success" align="center">
+                      {" "}
+                      <h3>Awards and Achievements</h3>{" "}
+                    </CardHeader>
+                    <CardBody align="center">
+                      Detailed list of my project. Click here
+                    </CardBody>
+                  </Card>
+                </Link>
               </GridItem>
             </GridContainer>
           </div>
@@ -217,3 +158,16 @@ export default function ProfilePage(props) {
     </div>
   );
 }
+const useStyles2 = makeStyles({
+  card: {
+    backgroundColor: "#f44336",
+    //  minHeight:345,
+  },
+});
+// const primaryColor = "#9c27b0";
+// const warningColor = "#ff9800";
+// const dangerColor = "#f44336";
+// const successColor = "#4caf50";
+// const infoColor = "#00acc1";
+// const roseColor = "#e91e63";
+// const grayColor = "#999999";
