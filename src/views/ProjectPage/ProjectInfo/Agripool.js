@@ -20,6 +20,7 @@ import Parallax from "components/Parallax/Parallax.js";
 import IconButton from "@material-ui/core/IconButton";
 import { Apps, LinkedIn, Instagram, GitHub } from "@material-ui/icons";
 import profile from "assets/img/faces/vedant.jpeg";
+import Box from "@material-ui/core/Box";
 
 import agri1 from "assets/img/Agripool/3.jpeg";
 import agri2 from "assets/img/Agripool/5.jpeg";
@@ -43,58 +44,100 @@ export default function Agripool(props) {
   return (
     <div>
       <GridContainer container spacing={6} justify="center">
-        <GridItem xs={4} sm={3} md={1}>
-          <img alt="..." src={agri1} className={navImageClasses} />
+        <GridItem xs={5} sm={3} md={1}>
+          <Box borderColor="grey.300" borderRadius="5%" border={1}>
+            <img alt="..." src={agri1} className={navImageClasses} />
+          </Box>
         </GridItem>
-        <GridItem xs={4} sm={3} md={1}>
-          <img alt="..." src={agri2} className={navImageClasses} />
+
+        <GridItem xs={5} sm={3} md={1}>
+          <Box borderColor="grey.300" borderRadius="5%" border={1}>
+            <img alt="..." src={agri2} className={navImageClasses} />
+          </Box>
         </GridItem>
-        <GridItem xs={4} sm={3} md={1}>
-          <img alt="..." src={agri3} className={navImageClasses} />
+
+        <GridItem xs={5} sm={3} md={1}>
+          <Box borderColor="grey.300" borderRadius="5%" border={1}>
+            <img alt="..." src={agri3} className={navImageClasses} />
+          </Box>
         </GridItem>
-        <GridItem xs={4} sm={3} md={1}>
-          <img alt="..." src={agri4} className={navImageClasses} />
+
+        <GridItem xs={5} sm={3} md={1}>
+          <Box borderColor="grey.300" borderRadius="5%" border={1}>
+            <img alt="..." src={agri4} className={navImageClasses} />
+          </Box>
         </GridItem>
-        <GridItem xs={4} sm={3} md={1}>
-          <img alt="..." src={agri5} className={navImageClasses} />
+
+        <GridItem xs={5} sm={3} md={1}>
+          <Box borderColor="grey.300" borderRadius="5%" border={1}>
+            <img alt="..." src={agri5} className={navImageClasses} />
+          </Box>
         </GridItem>
-        <GridItem xs={4} sm={3} md={1}>
-          <img alt="..." src={agri6} className={navImageClasses} />
+
+        <GridItem xs={5} sm={3} md={1}>
+          <Box borderColor="grey.300" borderRadius="5%" border={1}>
+            <img alt="..." src={agri6} className={navImageClasses} />
+          </Box>
         </GridItem>
-        <GridItem xs={4} sm={3} md={1}>
-          <img alt="..." src={agri7} className={navImageClasses} />
+
+        <GridItem xs={5} sm={3} md={1}>
+          <Box borderColor="grey.300" borderRadius="5%" border={1}>
+            <img alt="..." src={agri7} className={navImageClasses} />
+          </Box>
         </GridItem>
       </GridContainer>
-      
+
       <GridContainer
+      container spacing={6}
         justifyContent="center"
         alignItems="center"
         justify="center"
       >
-        <GridItem xs={11} sm={8} md={4}><Card>
-        <CardHeader color="danger"> Project description</CardHeader>
-        <CardBody>
-          Agripool is a cross-platform native application. This is an app that
-          connects the farmers to the transporters. The aim was to make sure
-          that a transporter's truck never leaves half filled from the village
-          when going to the wholesale market. This ensures significant gains to
-          the transporters and reduced transportation expenses for the farmers.
-          In simple terms, it is uberpool for farmers.
-        </CardBody>
-      </Card></GridItem>
-      <GridItem xs={11} sm={8} md={4}><Card>
-        <CardHeader color="danger"> My work</CardHeader>
-        <CardBody>
-          My team used flutter to build this application. 
-          I worked on multiple pages. Most of the work done here was on front-end.
-          I, along with my teammates (<a href="https://www.linkedin.com/in/mohil-khare/">Mohil</a>, 
-          <a href="https://www.linkedin.com/in/jaideep-more-a9733015a/"> Jaideep</a>,
-          <a href="https://www.linkedin.com/in/keshav-mishra-912728173/"> Keshav</a>, ) participated 
-          in VCET hackathon with this project. We were the 2nd runner up. 
-          Refer the github for more info.
-          <IconButton><GitHub color="primary" onClick={() => window.open('https://github.com/Phoenix009/AgriPool')} href="https://material-ui.com/api/icon/"/></IconButton>
-        </CardBody>
-      </Card></GridItem>
+        <GridItem xs={11} sm={8} md={4}>
+          <Card>
+            <CardHeader color="danger"> Project description</CardHeader>
+            <CardBody>
+              Agripool is a cross-platform native application. This is an app
+              that connects the farmers to the transporters. The aim was to make
+              sure that a transporter's truck never leaves half filled from the
+              village when going to the wholesale market. This ensures
+              significant gains to the transporters and reduced transportation
+              expenses for the farmers. In simple terms, it is uberpool for
+              farmers.
+            </CardBody>
+          </Card>
+        </GridItem>
+        <GridItem xs={11} sm={8} md={4}>
+          <Card>
+            <CardHeader color="danger"> My work</CardHeader>
+            <CardBody>
+              My team used flutter to build this application. I worked on
+              multiple pages. Most of the work done here was on front-end. I,
+              along with my teammates (
+              <a href="https://www.linkedin.com/in/mohil-khare/">Mohil</a>,
+              <a href="https://www.linkedin.com/in/jaideep-more-a9733015a/">
+                {" "}
+                Jaideep
+              </a>
+              ,
+              <a href="https://www.linkedin.com/in/keshav-mishra-912728173/">
+                {" "}
+                Keshav
+              </a>
+              , ) participated in VCET hackathon with this project. We were the
+              2nd runner up. Refer the github for more info.
+              <IconButton>
+                <GitHub
+                  color="primary"
+                  onClick={() =>
+                    window.open("https://github.com/Phoenix009/AgriPool")
+                  }
+                  href="https://material-ui.com/api/icon/"
+                />
+              </IconButton>
+            </CardBody>
+          </Card>
+        </GridItem>
       </GridContainer>
     </div>
   );

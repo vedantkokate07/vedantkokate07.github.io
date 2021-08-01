@@ -33,7 +33,7 @@ import work5 from "assets/img/examples/clem-onojegaw.jpg";
 
 import Agripool from "./ProjectInfo/Agripool";
 import CMS from "./ProjectInfo/CMS"
-
+import PredictQ from "./ProjectInfo/PredictQ";
 
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 
@@ -88,15 +88,12 @@ export default function ProjectPage(props) {
                 here is the details of my previous projects as well as my current projects.
               </p>
             </div>
-            <GridContainer justify="center">
+            <GridContainer justify="center" algin="center">
               <GridItem xs={12} sm={12} md={12}  className={classes.navWrapper}>
                 <NavPills
                   alignCenter
                   color="info"
-                  verticle={{
-                    tabsGrid: { xs: 1, sm: 1, md: 1, size:"small"},
-                    contentGrid: { xs: 12, sm: 8, md: 8 },
-                  }}
+                  
                   tabs={[
                     {
                       tabButton: "AgriPool",
@@ -115,32 +112,7 @@ export default function ProjectPage(props) {
                       tabButton: "Auditory Analysis Using DRL",
                       tabIcon: Camera,
                       tabContent: (
-                        <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={studio1}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio2}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={studio5}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio4}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                        </GridContainer>
+                        <PredictQ/>
                       ),
                     },
                     
@@ -148,37 +120,7 @@ export default function ProjectPage(props) {
                       tabButton: "PredictQ",
                       tabIcon: Palette,
                       tabContent: (
-                        <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work1}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work2}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work3}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work4}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work5}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                        </GridContainer>
+                        <PredictQ/>
                       ),
                     },
                     {
