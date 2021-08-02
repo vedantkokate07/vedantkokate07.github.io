@@ -110,8 +110,8 @@ export default function CodeCell(props) {
             </CardHeader>
             <CardBody align="justify">
               When I stared, there were only 2 members left in the club, right
-              now there are more than 70+ active members. I have helped in
-              creating, promoting and developing CP culture in my college.
+              now there are over 70+ active members. I have helped in creating,
+              promoting and developing CP culture in my college.
             </CardBody>
           </Card>
         </GridItem>
@@ -137,8 +137,8 @@ export default function CodeCell(props) {
           <Card>
             <CardHeader color="danger">Main Speaker for events</CardHeader>
             <CardBody align="justify">
-              Keynote Speaker for Algo Talks. Main speaker and organizer for
-              various small size events for the club too.
+              Keynote Speaker for Algo Talks. Principal speaker and organizer
+              for various small size events for the club too.
             </CardBody>
           </Card>
         </GridItem>
