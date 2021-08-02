@@ -58,8 +58,8 @@ export default function Sat(props) {
             <CardBody align="justify">
               BeliefSat is a 2p-PocketQube standard student nano-satellite being
               developed by the undergraduate students of K.J.Somaiya Institute
-              of Engineering and Information Technology, Sion, Mumbai . The
-              satellite itself is a sub-part of team's proposal under
+              of Engineering and Information Technology, Sion, Mumbai. The
+              satellite itself is a sub-part of team’s proposal under
               PS4-Orbital platform program of ISRO, wherein, team aims to
               demonstrate indegenously developed technologies for PocketQube
               standard nano-satellites. As a part of this demonstration,
@@ -77,12 +77,13 @@ export default function Sat(props) {
           <Card>
             <CardHeader color="danger"> My work</CardHeader>
             <CardBody align="justify">
-              I have worked on building the firmware from scratch for the satellite.
-              We have used Arduino Uno. Many of the libraries of sensors had to be optimized.
-              I along with my team are wholely responsible for the firmware of the satellite.
-              As we have limited space, we plan to avoid using libraries and abstraction wherever possible
-              The satellite's launch and work has been delayeddue to the pandemic.
-              Check out the github repo for full information.
+              I have worked on building the firmware from scratch for the
+              satellite. We have used Arduino Uno. Many of the libraries of
+              sensors had to be optimized. I along with my team are wholly
+              responsible for the firmware of the satellite. As we have limited
+              space, we plan to avoid using libraries and abstraction wherever
+              possible The satellite’s launch and work has been delayed due to
+              the pandemic. Check out the github repo for full information.
               <IconButton>
                 <GitHub
                   color="primary"

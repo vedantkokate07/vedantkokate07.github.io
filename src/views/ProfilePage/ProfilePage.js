@@ -4,24 +4,17 @@ import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
-import Camera from "@material-ui/icons/Camera";
-import Palette from "@material-ui/icons/Palette";
-import Favorite from "@material-ui/icons/Favorite";
 import { Link } from "react-router-dom";
-import ButtonBase from "@material-ui/core/ButtonBase";
+
 // core components
 import Header from "components/Header/Header.js";
-import Footer from "components/Footer/Footer.js";
-import Button from "components/CustomButtons/Button.js";
+
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
-import NavPills from "components/NavPills/NavPills.js";
-import Parallax from "components/Parallax/Parallax.js";
-import Box from "@material-ui/core/Box";
 
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
+import Parallax from "components/Parallax/Parallax.js";
+
 import profile from "assets/img/faces/vedant.jpeg";
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
@@ -70,23 +63,22 @@ export default function ProfilePage(props) {
                   <div className={classes.name}>
                     <h3 className={classes.title}>Vedant Kokate</h3>
                     <h6>Competitive Programer | Python</h6>
-                 
-                
                   </div>
                 </div>
               </GridItem>
             </GridContainer>
             <div className={classes.description}>
               <p align="justify">
-                I started Coding at age 15. Build an Chess AI at age 16. I have
-                solved around 700 problems across all CP platforms. I like
-                problem solving, and love maths. I am active on Project Euler. I
-                have headed and managed the Codecell of my college as well as Programming cell
-                of Student satellite for two years. Apart from this, I have
-                raised money for charities through various chess events.{" "}
+                I started Coding at age 15. Build a Chess AI at age 16. I have
+                solved around 700 problems across all CP platforms and love
+                problem solving and maths. I am have been very active in Project
+                Euler. I have headed and managed the Codecell of my college and
+                Programming cell of Student satellite for two years. Apart from
+                this, I have raised money for charities through various chess
+                events.{" "}
               </p>
             </div>
-            
+
             <GridContainer
               justify="center"
               algin="center"
@@ -154,7 +146,6 @@ export default function ProfilePage(props) {
           </div>
         </div>
       </div>
-     
     </div>
   );
 }

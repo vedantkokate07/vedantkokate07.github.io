@@ -69,12 +69,12 @@ export default function CMS(props) {
           <Card>
             <CardHeader color="danger"> Project description</CardHeader>
             <CardBody align="justify">
-              This Application helps automate attendance and billing reuired by
-              CMS, for the gunmen they hire. CMS hires gunmen when trasporting
-              money to an ATM. This app takes biometric id of the gunmen
-              (instead signing in a register) when starting a trip. This gets
-              registered in the system. At the end of the month, attendace and
-              bill is send to vendors of the gunmen.
+              This Application helps automate attendance, and billing required
+              by CMS, for the gunmen they hire. CMS hires gunmen when
+              transporting money to an ATM. This app takes biometric id of the
+              gunmen (instead signing in a register) when starting a trip. This
+              gets registered in the system. At the end of the month, attendance
+              and bill is sent to vendors of the gunmen.
             </CardBody>
           </Card>
         </GridItem>
@@ -83,9 +83,9 @@ export default function CMS(props) {
             <CardHeader color="danger"> My work</CardHeader>
             <CardBody align="justify">
               I worked with react on the frontend of the application. I worked
-              on almost all of the pages. This was problem set 2 for Code
-              Adventure 3.0 (a one month long hackathon). We were the received
-              BEST UI and First Prize for this hackahon.
+              on almost all the pages. This was problem set 2 for Code Adventure
+              3.0 (a one month long hackathon). We were the received BEST UI and
+              First Prize for this hackathon.
               <IconButton>
                 <GitHub
                   color="primary"

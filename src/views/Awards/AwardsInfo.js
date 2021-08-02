@@ -19,7 +19,7 @@ import NavPills from "components/NavPills/NavPills.js";
 import Parallax from "components/Parallax/Parallax.js";
 import IconButton from "@material-ui/core/IconButton";
 import { Apps, LinkedIn, Instagram, GitHub } from "@material-ui/icons";
-import { AiFillGoogleCircle,AiOutlineInfoCircle } from "react-icons/ai";
+import { AiFillGoogleCircle, AiOutlineInfoCircle } from "react-icons/ai";
 import { SiCodechef } from "react-icons/si";
 import profile from "assets/img/faces/vedant.jpeg";
 import Box from "@material-ui/core/Box";
@@ -52,13 +52,15 @@ export default function AwardInfo(props) {
               AIR 273 in Google Hash Code 2021
             </CardHeader>
             <CardBody align="justify">
-              Google Hash Code is Google's prestigious annual team contest.
-              Worl's best coder's compete here. More Info
+              Google Hash Code is Google’s prestigious annual team contest.
+              World’s best coders compete here. More Info
               <IconButton>
                 <AiFillGoogleCircle
                   // color="green"
                   onClick={() =>
-                    window.open("https://codingcompetitions.withgoogle.com/hashcode/about")
+                    window.open(
+                      "https://codingcompetitions.withgoogle.com/hashcode/about"
+                    )
                   }
                 />{" "}
               </IconButton>
@@ -71,13 +73,15 @@ export default function AwardInfo(props) {
               1st Rank and best UI in Code Adventure 3.0
             </CardHeader>
             <CardBody align="justify">
-              Code Adventure is national 1 month long Hackathon. This year's
-              theme was fintech. More Info
+              Code Adventure is national 1 month long Hackathon. This year’s
+              theme was fintech. More Info.
               <IconButton>
                 <AiOutlineInfoCircle
                   color="primary"
                   onClick={() =>
-                    window.open("https://www.linkedin.com/in/vcet-hackathon/?originalSubdomain=in")
+                    window.open(
+                      "https://www.linkedin.com/in/vcet-hackathon/?originalSubdomain=in"
+                    )
                   }
                 />
               </IconButton>
@@ -98,7 +102,7 @@ export default function AwardInfo(props) {
               3rd Rank in VCET Hackathon 2021
             </CardHeader>
             <CardBody align="justify">
-              VCET's prestigious 24 hour Hackathon. We were free to chose any
+              VCET’s prestigious 24 hour Hackathon. We were free to choose any
               topic for the hackathon.
               <IconButton>
                 <AiOutlineInfoCircle
@@ -117,15 +121,13 @@ export default function AwardInfo(props) {
               Top 99.4 percentile on Project Euler
             </CardHeader>
             <CardBody align="justify">
-              Project euler is a website dedicated to a series of computational
-              problems intended to be solved with computer programs. More than 1
-              million people have solved one probel over there
+              Project Euler is a website dedicated to a series of computational
+              problems intended to be solved with computer programs. Over 1
+              million people have solved at least one problem over there.
               <IconButton>
                 <AiOutlineInfoCircle
                   color="primary"
-                  onClick={() =>
-                    window.open("https://projecteuler.net/")
-                  }
+                  onClick={() => window.open("https://projecteuler.net/")}
                 />
               </IconButton>
             </CardBody>
@@ -145,8 +147,8 @@ export default function AwardInfo(props) {
               Global rank 273 May Cook-Off 2020 Division 2
             </CardHeader>
             <CardBody align="justify">
-              CodeChef is Cp platform. It has monthly contests which see arounf
-              10-12K partcipants.
+              CodeChef is CP platform. It has monthly contests which see around
+              10-12K participants.
               <IconButton>
                 <SiCodechef
                   color="primary"
@@ -164,8 +166,8 @@ export default function AwardInfo(props) {
               Global rank 274 June Challenge 2020 Division 2
             </CardHeader>
             <CardBody align="justify">
-              CodeChef is Cp platform. It has monthly contests which see arounf
-              10-12K partcipants.
+              CodeChef is CP platform. It has monthly contests which see around
+              10-12K participants.
               <IconButton>
                 <SiCodechef
                   color="primary"

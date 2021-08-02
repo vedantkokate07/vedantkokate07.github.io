@@ -57,9 +57,9 @@ export default function DRL(props) {
             <CardHeader color="danger"> Project description</CardHeader>
             <CardBody align="justify">
               We plan to analyse voice patterns for various kinds of emotions,
-              which would include rudeness, satire, confidance, happiness,
+              which would include rudeness, satire, confidence, happiness,
               sadness and many more. We plan to test Deep Reinforcement learning
-              in this feild. The dataset would be created by us(as no dataset is
+              in this field. We would create the dataset(as no dataset is
               currently available). We plan to use this to train individuals in
               their speaking skills.
             </CardBody>
@@ -75,7 +75,7 @@ export default function DRL(props) {
               </a>{" "}
               and{" "}
               <a href="https://www.linkedin.com/in/arghyadeep-k-14b06b15a/">
-                ArghyaDeep
+                Arghyadeep
               </a>
               . We are currently in research phase. I would be working on the
               Model and dataset creation.

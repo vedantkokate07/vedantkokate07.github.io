@@ -75,11 +75,11 @@ export default function PredictQ(props) {
           <Card>
             <CardHeader color="danger"> Project description</CardHeader>
             <CardBody align="justify">
-              This Webapp will be used by hospitals and clinics, but it's domain
-              is versite enought to fit anywhere which requires queue
-              prediction. This app provied accurate time required for patient's
-              turn to show up in an hospital. It also tells time reuqired for
-              each taks in the hospital like billing, buying medicine, etc.
+              This Web app was made for hospitals and clinics, but it’s domain
+              is versatile enough to fit anywhere which requires queue
+              prediction. This app provides accurate time required for patient’s
+              turn to show up in a hospital. It also tells time required for
+              each task in the hospital like billing, buying medicine, etc.
             </CardBody>
           </Card>
         </GridItem>
@@ -88,11 +88,12 @@ export default function PredictQ(props) {
             <CardHeader color="danger"> My work</CardHeader>
             <CardBody align="justify">
               This was a problem statement of{" "}
-              <a href="https://deepblue.co.in/about/"></a>Project DeepBlue (3
-              months long hackathon). As data is not avaiable for this kind of
-              problem statement, I worked on simulating the data, ML model for queue time prediction
-             and the front end of this project. We were semifinalist for this hackathon.
-             Refer Github repo for information.
+              <a href="https://deepblue.co.in/about/">Project DeepBlue</a> (3
+              months long hackathon). As data is not available for this kind of
+              problem statement, I worked on simulating the data, ML model for
+              queue time prediction and the front end of this project. We were
+              semifinalist for this hackathon. Refer GitHub repo for
+              information. This was a problem statement of{" "}
               <IconButton>
                 <GitHub
                   color="primary"
@@ -102,10 +103,8 @@ export default function PredictQ(props) {
                 />
               </IconButton>
             </CardBody>
-          </Card>       
-            
+          </Card>
         </GridItem>
-        
       </GridContainer>
     </div>
   );
