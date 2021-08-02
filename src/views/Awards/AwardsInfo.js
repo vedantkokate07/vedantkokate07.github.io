@@ -5,26 +5,16 @@ import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
-import Camera from "@material-ui/icons/Camera";
-import Palette from "@material-ui/icons/Palette";
-import Favorite from "@material-ui/icons/Favorite";
+
 // core components
-import Header from "components/Header/Header.js";
-import Footer from "components/Footer/Footer.js";
-import Button from "components/CustomButtons/Button.js";
+
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
-import NavPills from "components/NavPills/NavPills.js";
-import Parallax from "components/Parallax/Parallax.js";
+
 import IconButton from "@material-ui/core/IconButton";
-import { Apps, LinkedIn, Instagram, GitHub } from "@material-ui/icons";
+
 import { AiFillGoogleCircle, AiOutlineInfoCircle } from "react-icons/ai";
 import { SiCodechef } from "react-icons/si";
-import profile from "assets/img/faces/vedant.jpeg";
-import Box from "@material-ui/core/Box";
-
-import S1 from "assets/img/sat.jpg";
 
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
