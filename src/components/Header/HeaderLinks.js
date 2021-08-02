@@ -12,7 +12,13 @@ import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
 
 // @material-ui/icons
-import { Apps, LinkedIn, Instagram, GitHub } from "@material-ui/icons";
+import {
+  Apps,
+  LinkedIn,
+  Instagram,
+  GitHub,
+  MailOutline,
+} from "@material-ui/icons";
 
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
@@ -36,12 +42,21 @@ export default function HeaderLinks(props) {
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link to="/profile-page" className={classes.dropdownLink}>
+            <Link to="/" className={classes.dropdownLink}>
               Home
             </Link>,
             <Link to="/project-page" className={classes.dropdownLink}>
-            Projects
-          </Link>,
+              Projects
+            </Link>,
+            <Link to="/awards-page" className={classes.dropdownLink}>
+              Awards
+            </Link>,
+            <Link to="/experience-page" className={classes.dropdownLink}>
+              Experience
+            </Link>,
+            <Link to="/project-page" className={classes.dropdownLink}>
+              Compitetive programming
+            </Link>,
             ,
           ]}
         />
@@ -55,7 +70,11 @@ export default function HeaderLinks(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <IconButton color="secondary" size="medium" component="span">
-            <Instagram />
+            <Instagram
+              onClick={() =>
+                window.open("https://www.instagram.com/vedant_kokate/")
+              }
+            />
           </IconButton>
         </Tooltip>
       </ListItem>
@@ -67,19 +86,37 @@ export default function HeaderLinks(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <IconButton color="secondary" size="medium" component="span">
-            <LinkedIn />
+            <LinkedIn onClick={() =>
+                window.open("https://www.linkedin.com/in/vedant-kokate-723030182/")
+              }/>
           </IconButton>
         </Tooltip>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="linkedin-tooltip"
-          title="Check me out on Github"
+          id="github-tooltip"
+          title="Check out on my Github"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
-         <IconButton color="secondary" size="medium" component="span">
-            <GitHub />
+          <IconButton color="secondary" size="medium" component="span">
+            <GitHub onClick={() =>
+                window.open("https://github.com/vedantkokate07")
+              }/>
+          </IconButton>
+        </Tooltip>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="mail-tooltip"
+          title="write me at"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <IconButton color="secondary" size="medium" component="span">
+            <MailOutline onClick={() =>
+                window.open("mailto:vedant.kokate@somaiya.com")
+            }/>
           </IconButton>
         </Tooltip>
       </ListItem>

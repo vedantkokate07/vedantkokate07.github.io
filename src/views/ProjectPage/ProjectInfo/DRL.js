@@ -38,7 +38,7 @@ export default function DRL(props) {
   return (
     <div>
       <GridContainer container spacing={6} justify="center">
-        <GridItem xs={12} sm={3} md={3}>
+        <GridItem xs={12} sm={8} md={3}>
           <Box borderColor="grey.300" borderRadius="5%" border={1}>
             <img alt="..." src={D1} className={navImageClasses} />
           </Box>

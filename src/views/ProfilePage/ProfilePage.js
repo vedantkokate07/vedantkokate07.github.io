@@ -44,7 +44,7 @@ export default function ProfilePage(props) {
     <div>
       <Header
         color="transparent"
-        brand="Material Kit React"
+        brand=""
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -106,7 +106,7 @@ export default function ProfilePage(props) {
                 </Link>
               </GridItem>
               <GridItem xs={12} sm={12} md={4}>
-                <Link to="/project-page">
+                <Link to="/experience-page">
                   <Card>
                     <CardHeader color="warning" align="center">
                       <h3>Experience</h3>
@@ -138,7 +138,7 @@ export default function ProfilePage(props) {
                 </Link>
               </GridItem>
               <GridItem xs={12} sm={12} md={4}>
-                <Link to="/project-page">
+                <Link to="/awards-page">
                   <Card>
                     <CardHeader color="success" align="center">
                       {" "}
@@ -154,7 +154,7 @@ export default function ProfilePage(props) {
           </div>
         </div>
       </div>
-      <Footer />
+     
     </div>
   );
 }

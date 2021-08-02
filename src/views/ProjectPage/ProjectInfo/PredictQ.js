@@ -41,18 +41,18 @@ export default function PredictQ(props) {
   return (
     <div>
       <GridContainer container spacing={6} justify="center">
-        <GridItem xs={12} sm={3} md={3}>
+        <GridItem xs={12} sm={6} md={3}>
           <Box borderColor="grey.300" borderRadius="5%" border={1}>
             <img alt="..." src={P1} className={navImageClasses} />
           </Box>
         </GridItem>
 
-        <GridItem xs={12} sm={3} md={3}>
+        <GridItem xs={12} sm={6} md={3}>
           <Box borderColor="grey.300" borderRadius="5%" border={1}>
             <img alt="..." src={P3} className={navImageClasses} />
           </Box>
         </GridItem>
-        <GridItem xs={12} sm={3} md={3}>
+        <GridItem xs={12} sm={6} md={3}>
           <Box borderColor="grey.300" borderRadius="5%" border={1}>
             <img alt="..." src={P2} className={navImageClasses} />
           </Box>

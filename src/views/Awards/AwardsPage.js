@@ -19,18 +19,13 @@ import NavPills from "components/NavPills/NavPills.js";
 import Parallax from "components/Parallax/Parallax.js";
 
 import profile from "assets/img/faces/vedant.jpeg";
+import AwardInfo from "./AwardsInfo";
 
-
-import Agripool from "./ProjectInfo/Agripool";
-import CMS from "./ProjectInfo/CMS"
-import PredictQ from "./ProjectInfo/PredictQ";
-import Sat from "./ProjectInfo/Sat"
-import DRL from "./ProjectInfo/DRL";
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 
 const useStyles = makeStyles(styles);
 
-export default function ProjectPage(props) {
+export default function AwardsPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
   const imageClasses = classNames(
@@ -61,7 +56,7 @@ export default function ProjectPage(props) {
         <div >
           <div >
             <GridContainer justify="center" >
-              <GridItem xs={12} sm={11} md={12} lg={12}>
+              <GridItem xs={12} sm={12} md={100} lg={100}>
                 <div className={classes.profile}>
                   <div>
                     <img src={profile}   width="102" height="42" className={imageClasses} />
@@ -73,57 +68,10 @@ export default function ProjectPage(props) {
                 </div>
               </GridItem>
             </GridContainer>
-            <div className={classes.description}>
-              <p>
-                I have worked on various projects, 
-                here is the details of my previous projects as well as my current projects.
-              </p>
-            </div>
+          
             <GridContainer justify="center" algin="center">
               <GridItem xs={12} sm={12} md={12}  className={classes.navWrapper}>
-                <NavPills
-                  alignCenter
-                  color="warning"
-                  
-                  tabs={[
-                    {
-                      tabButton: "AgriPool",
-                      tabIcon: Camera,
-                      tabContent: (
-                        <Agripool/>
-                      ),
-                    },
-                    {
-                      tabButton: "CMS",
-                      tabIcon: Favorite,
-                      tabContent: (<CMS/>
-                      ),
-                    },
-                    {
-                      tabButton: "Auditory Analysis Using DRL",
-                      tabIcon: Camera,
-                      tabContent: (
-                        <DRL/>
-                      ),
-                    },
-                    
-                    {
-                      tabButton: "PredictQ",
-                      tabIcon: Palette,
-                      tabContent: (
-                        <PredictQ/>
-                      ),
-                    },
-                    {
-                      tabButton: "Firmware for Student Sat",
-                      tabIcon: Favorite,
-                      tabContent: (
-                        <Sat/>
-                      ),
-                    },
-                  
-                  ]}
-                />
+                <AwardInfo/>
               </GridItem>
             </GridContainer>
           </div>

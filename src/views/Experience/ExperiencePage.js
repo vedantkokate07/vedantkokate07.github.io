@@ -109,7 +109,7 @@ export default function ExperiencePage(props) {
           </div>
         </div>
       </div>
-      <Footer />
+      
     </div>
   );
 }
