@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9f280494.chunk.css",
+    "main.js": "/static/js/main.6ca18c23.chunk.js",
+    "main.js.map": "/static/js/main.6ca18c23.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a6b5400c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a6b5400c.js.map",
+    "static/js/2.6d730acd.chunk.js": "/static/js/2.6d730acd.chunk.js",
+    "static/js/2.6d730acd.chunk.js.map": "/static/js/2.6d730acd.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.9f280494.chunk.css.map": "/static/css/main.9f280494.chunk.css.map",
+    "static/js/2.6d730acd.chunk.js.LICENSE.txt": "/static/js/2.6d730acd.chunk.js.LICENSE.txt",
+    "static/media/10.ad3c7122.jpeg": "/static/media/10.ad3c7122.jpeg",
+    "static/media/3.52304b8c.jpeg": "/static/media/3.52304b8c.jpeg",
+    "static/media/5.81fbe8c5.jpeg": "/static/media/5.81fbe8c5.jpeg",
+    "static/media/6.a75dff28.jpeg": "/static/media/6.a75dff28.jpeg",
+    "static/media/7.b16d36fc.jpeg": "/static/media/7.b16d36fc.jpeg",
+    "static/media/8.ca30be89.jpeg": "/static/media/8.ca30be89.jpeg",
+    "static/media/9.f27d2994.jpeg": "/static/media/9.f27d2994.jpeg",
+    "static/media/admin.ce7beb50.png": "/static/media/admin.ce7beb50.png",
+    "static/media/attendance.671f6313.png": "/static/media/attendance.671f6313.png",
+    "static/media/blackcloth.ff47e994.jpg": "/static/media/blackcloth.ff47e994.jpg",
+    "static/media/dashboard.83c3864c.PNG": "/static/media/dashboard.83c3864c.PNG",
+    "static/media/drl.cc2aa6ae.jpg": "/static/media/drl.cc2aa6ae.jpg",
+    "static/media/home.f013fa8a.PNG": "/static/media/home.f013fa8a.PNG",
+    "static/media/i13.png": "/static/media/i13.3ca84cd6.png",
+    "static/media/patients_view.64aa5258.PNG": "/static/media/patients_view.64aa5258.PNG",
+    "static/media/queue_dashboard.62040a58.PNG": "/static/media/queue_dashboard.62040a58.PNG",
+    "static/media/sat.4917a959.jpg": "/static/media/sat.4917a959.jpg",
+    "static/media/vedant.9b0ff636.jpeg": "/static/media/vedant.9b0ff636.jpeg",
+    "static/media/vedant1.59fed30b.jpg": "/static/media/vedant1.59fed30b.jpg",
+    "static/media/vendors.273240c8.png": "/static/media/vendors.273240c8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a6b5400c.js",
+    "static/js/2.6d730acd.chunk.js",
+    "static/css/main.9f280494.chunk.css",
+    "static/js/main.6ca18c23.chunk.js"
+  ]
+}
