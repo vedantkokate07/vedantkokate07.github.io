@@ -9,6 +9,7 @@ import Profile from "./views/ProfilePage/ProfilePage"
 import Project from "./views/ProjectPage/ProjectPage"
 import Experience from "./views/Experience/ExperiencePage"
 import Awards from "./views/Awards/AwardsPage"
+import Working from "views/Working";
 //
 
 // ----------------------------------------------------------------------
@@ -24,9 +25,13 @@ export default function Rout() {return(<Router>
       <Route path="/awards-page">
         <Awards />
       </Route>
+      <Route path="/cp">
+        <Working />
+      </Route>
       <Route path="/">
         <Profile />
       </Route>
+      
     </Switch>
  
 </Router>);

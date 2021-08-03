@@ -5,7 +5,7 @@ import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 import { Link } from "react-router-dom";
-import Button from "@material-ui/core/Button";
+
 
 // core components
 import Header from "components/Header/Header.js";
@@ -24,7 +24,7 @@ import styles from "assets/jss/material-kit-react/views/profilePage.js";
 import blackcloth from "assets/img/blackcloth.jpg";
 const useStyles = makeStyles(styles);
 import Footer from "components/Footer/Footer";
-export default function ProfilePage(props) {
+export default function Working(props) {
   const classes = useStyles();
   const classes2 = useStyles2();
   const { ...rest } = props;
@@ -35,7 +35,7 @@ export default function ProfilePage(props) {
   );
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
   return (
-    <div style={{ backgroundColor: "black" }}>
+    <div style={{ backgroundColor: "black", padding:"20px"}}>
       <Header
         color="transparent"
         brand=""
@@ -52,7 +52,7 @@ export default function ProfilePage(props) {
         filter
         image={require("assets/img/backround/i13.png").default}
       />
-      <div className={classNames(classes.main, classes.mainRaised)}>
+     <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
           <div className={classes.container}>
             <GridContainer justify="center">
@@ -70,80 +70,20 @@ export default function ProfilePage(props) {
                 </div>
               </GridItem>
             </GridContainer>
-            <div className={classes.description}>
-              <p align="justify">
-                I started Coding at age 15. Build a Chess AI at age 16. I have
-                solved around 700 problems across all CP platforms and love
-                problem solving and maths. I am have been very active in Project
-                Euler. I have headed and managed the Codecell of my college and
-                Programming cell of Student satellite for two years. Apart from
-                this, I have raised money for charities through various chess
-                events.{" "}
-              </p>
-            </div>
+            
 
             <GridContainer
               justify="center"
               algin="center"
               style={{ margin: "10px auto 10px auto" }}
             >
-              <GridItem xs={12} sm={12} md={4}>
-                <Link to="/project-page">
-                  <Card>
-                    <CardHeader color="custom" align="center">
-                      <h3>My Projects</h3>
-                      <h3></h3>
-                    </CardHeader>
-                    <CardBody align="center"></CardBody>
-                  </Card>
-                </Link>
-              </GridItem>
-              <GridItem xs={12} sm={12} md={4}>
-                <Link to="/experience-page">
-                  <Card>
-                    <CardHeader color="custom" align="center">
-                      <h3>Experience</h3>
-                      <h3></h3>
-                    </CardHeader>
-                    <CardBody align="center"></CardBody>
-                  </Card>
-                </Link>
-              </GridItem>
-            </GridContainer>
-            <GridContainer
-              justify="center"
-              algin="center"
-              style={{ margin: "10px auto 10px auto" }}
-            >
-              <GridItem xs={12} sm={12} md={4}>
-                <Link to="/cp">
-                  <Card>
-                    <CardHeader color="custom" align="center">
-                      {" "}
-                      <h3>Competitive Programming</h3>
-                    </CardHeader>
-                    <CardBody align="center"></CardBody>
-                  </Card>
-                </Link>
-              </GridItem>
-
-              <GridItem xs={12} sm={12} md={4}>
-                <Link to="/awards-page">
-                  <Card>
-                    <CardHeader color="custom" align="center">
-                      {" "}
-                      <h3>Awards and Achievements</h3>{" "}
-                    </CardHeader>
-                    <CardBody ></CardBody>
-                  </Card>
-                </Link>
-              </GridItem>
+              <h1 style={{color:"yellow"}}>Page has not been completed Yet</h1>
 
             </GridContainer>
           </div>
         </div>
       </div>
-      <Footer />
+      
     </div>
   );
 }

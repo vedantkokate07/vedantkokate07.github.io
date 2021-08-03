@@ -54,8 +54,8 @@ export default function HeaderLinks(props) {
             <Link to="/experience-page" className={classes.dropdownLink}>
               Experience
             </Link>,
-            <Link to="/project-page" className={classes.dropdownLink}>
-              Compitetive programming
+            <Link to="/cp" className={classes.dropdownLink}>
+              Competitive Programming
             </Link>,
             ,
           ]}

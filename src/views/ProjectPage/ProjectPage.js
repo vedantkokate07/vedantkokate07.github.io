@@ -17,7 +17,7 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import NavPills from "components/NavPills/NavPills.js";
 import Parallax from "components/Parallax/Parallax.js";
 
-import profile from "assets/img/faces/vedant.jpeg";
+import profile from "assets/img/faces/vedant1.jpg";
 
 
 import Agripool from "./ProjectInfo/Agripool";
