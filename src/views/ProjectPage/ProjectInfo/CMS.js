@@ -40,18 +40,18 @@ export default function CMS(props) {
   return (
     <div>
       <GridContainer container spacing={6} justify="center">
-        <GridItem xs={12} sm={6} md={3}>
+        <GridItem xs={12} sm={6} md={6}>
           <Box borderColor="grey.300" borderRadius="5%" border={1}>
             <img alt="..." src={CMS1} className={navImageClasses} />
           </Box>
         </GridItem>
 
-        <GridItem xs={12} sm={6} md={3}>
+        <GridItem xs={12} sm={6} md={6}>
           <Box borderColor="grey.300" borderRadius="5%" border={1}>
             <img alt="..." src={CMS3} className={navImageClasses} />
           </Box>
         </GridItem>
-        <GridItem xs={8} sm={3} md={1}>
+        <GridItem xs={8} sm={3} md={3}>
           <Box borderColor="grey.300" borderRadius="5%" border={1}>
             <img alt="..." src={CMS2} className={navImageClasses} />
           </Box>
@@ -67,7 +67,7 @@ export default function CMS(props) {
       >
         <GridItem xs={11} sm={8} md={4}>
           <Card>
-            <CardHeader color="danger"> Project description</CardHeader>
+            <CardHeader color="custom"> Project description</CardHeader>
             <CardBody align="justify">
               This Application helps automate attendance, and billing required
               by CMS, for the gunmen they hire. CMS hires gunmen when
@@ -80,7 +80,7 @@ export default function CMS(props) {
         </GridItem>
         <GridItem xs={11} sm={8} md={4}>
           <Card>
-            <CardHeader color="danger"> My work</CardHeader>
+            <CardHeader color="custom"> My work</CardHeader>
             <CardBody align="justify">
               I worked with react on the frontend of the application. I worked
               on almost all the pages. This was problem set 2 for Code Adventure

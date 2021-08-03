@@ -39,7 +39,7 @@ export default function ProjectPage(props) {
   );
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
   return (
-    <div>
+    <div style={{backgroundColor:"black"}}>
       <Header
         color="transparent"
         brand=""
@@ -54,13 +54,13 @@ export default function ProjectPage(props) {
       <Parallax
         small
         filter
-        image={require("assets/img/profile-bg.jpg").default}
+        image={require("assets/img/backround/i13.png").default}
       />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div >
           <div >
             <GridContainer justify="center" >
-              <GridItem xs={12} sm={11} md={12} lg={12}>
+              <GridItem xs={12} sm={11} md={12} >
                 <div className={classes.profile}>
                   <div>
                     <img src={profile}   width="102" height="42" className={imageClasses} />
@@ -79,10 +79,10 @@ export default function ProjectPage(props) {
               </p>
             </div>
             <GridContainer justify="center" algin="center">
-              <GridItem xs={12} sm={12} md={12}  className={classes.navWrapper}>
+              <GridItem xs={12} sm={12} md={10}  className={classes.navWrapper}>
                 <NavPills
                   alignCenter
-                  color="warning"
+                  color="custom"
                   
                   tabs={[
                     {

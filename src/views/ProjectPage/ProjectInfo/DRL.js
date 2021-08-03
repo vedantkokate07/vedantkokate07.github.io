@@ -54,7 +54,7 @@ export default function DRL(props) {
       >
         <GridItem xs={11} sm={8} md={4}>
           <Card>
-            <CardHeader color="danger"> Project description</CardHeader>
+            <CardHeader color="custom"> Project description</CardHeader>
             <CardBody align="justify">
               We plan to analyse voice patterns for various kinds of emotions,
               which would include rudeness, satire, confidence, happiness,
@@ -67,7 +67,7 @@ export default function DRL(props) {
         </GridItem>
         <GridItem xs={11} sm={8} md={4}>
           <Card>
-            <CardHeader color="danger"> My work</CardHeader>
+            <CardHeader color="custom"> My work</CardHeader>
             <CardBody align="justify">
               This is my Final year project along with{" "}
               <a href="https://www.linkedin.com/in/mustansir-kapasi-43a521168/">

@@ -37,44 +37,44 @@ export default function Agripool(props) {
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
   return (
     <div>
-      <GridContainer container spacing={6} justify="center">
-        <GridItem xs={5} sm={3} md={1}>
+      <GridContainer container spacing={6}  justify="center">
+        <GridItem xs={5} sm={3} md={2}>
           <Box borderColor="grey.300" borderRadius="5%" border={1}>
             <img alt="..." src={agri1} className={navImageClasses} />
           </Box>
         </GridItem>
 
-        <GridItem xs={5} sm={3} md={1}>
+        <GridItem xs={5} sm={3} md={2}>
           <Box borderColor="grey.300" borderRadius="5%" border={1}>
             <img alt="..." src={agri2} className={navImageClasses} />
           </Box>
         </GridItem>
 
-        <GridItem xs={5} sm={3} md={1}>
+        <GridItem xs={5} sm={3} md={2}>
           <Box borderColor="grey.300" borderRadius="5%" border={1}>
             <img alt="..." src={agri3} className={navImageClasses} />
           </Box>
         </GridItem>
 
-        <GridItem xs={5} sm={3} md={1}>
+        <GridItem xs={5} sm={3} md={2}>
           <Box borderColor="grey.300" borderRadius="5%" border={1}>
             <img alt="..." src={agri4} className={navImageClasses} />
           </Box>
         </GridItem>
 
-        <GridItem xs={5} sm={3} md={1}>
+        <GridItem xs={5} sm={3} md={2}>
           <Box borderColor="grey.300" borderRadius="5%" border={1}>
             <img alt="..." src={agri5} className={navImageClasses} />
           </Box>
         </GridItem>
 
-        <GridItem xs={5} sm={3} md={1}>
+        <GridItem xs={5} sm={3} md={2}>
           <Box borderColor="grey.300" borderRadius="5%" border={1}>
             <img alt="..." src={agri6} className={navImageClasses} />
           </Box>
         </GridItem>
 
-        <GridItem xs={5} sm={3} md={1}>
+        <GridItem xs={5} sm={3} md={2}>
           <Box borderColor="grey.300" borderRadius="5%" border={1}>
             <img alt="..." src={agri7} className={navImageClasses} />
           </Box>
@@ -90,7 +90,7 @@ export default function Agripool(props) {
       >
         <GridItem xs={11} sm={8} md={4}>
           <Card>
-            <CardHeader color="danger"> Project description</CardHeader>
+            <CardHeader color="custom"> Project description</CardHeader>
             <CardBody align="justify">
               Agripool is a cross-platform native application. This is an app
               that connects the farmers to the transporters. The aim was to make
@@ -104,7 +104,7 @@ export default function Agripool(props) {
         </GridItem>
         <GridItem xs={11} sm={8} md={4}>
           <Card>
-            <CardHeader color="danger"> My work</CardHeader>
+            <CardHeader color="custom"> My work</CardHeader>
             <CardBody align="justify">
               My team used flutter to build this application. I worked on
               multiple pages. Most of the work done here was on front-end. I,

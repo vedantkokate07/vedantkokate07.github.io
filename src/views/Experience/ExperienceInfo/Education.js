@@ -32,7 +32,7 @@ export default function Education(props) {
       >
         <GridItem xs={11} sm={8} md={3}>
           <Card>
-            <CardHeader color="danger">Engineering</CardHeader>
+            <CardHeader color="custom">Engineering</CardHeader>
             <CardBody align="justify">
               I am currently in my last year of Bachelor of Information
               Technology with average CGPA for last 3 years at 8.17
@@ -41,7 +41,7 @@ export default function Education(props) {
         </GridItem>
         <GridItem xs={11} sm={8} md={3}>
           <Card>
-            <CardHeader color="danger">12th Standard</CardHeader>
+            <CardHeader color="custom">12th Standard</CardHeader>
             <CardBody align="justify">
             78 percentage in my 12th Board exams
             </CardBody>
@@ -49,7 +49,7 @@ export default function Education(props) {
         </GridItem>
         <GridItem xs={11} sm={8} md={3}>
           <Card>
-            <CardHeader color="danger">10th Standard</CardHeader>
+            <CardHeader color="custom">10th Standard</CardHeader>
             <CardBody align="justify">
             90 percentage in my 10th Board exams
             </CardBody>

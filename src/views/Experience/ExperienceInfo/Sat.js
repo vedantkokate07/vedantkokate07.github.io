@@ -36,7 +36,7 @@ export default function Sat(props) {
       >
         <GridItem xs={11} sm={8} md={4}>
           <Card>
-            <CardHeader color="danger"> Technical work</CardHeader>
+            <CardHeader color="custom"> Technical work</CardHeader>
             <CardBody align="justify">
               Building the firmware from scratch for ’BeliefSat. BelifSat is
               pocket-cube satellite which is expected to be launched.
@@ -45,7 +45,7 @@ export default function Sat(props) {
         </GridItem>
         <GridItem xs={11} sm={8} md={4}>
           <Card>
-            <CardHeader color="danger"> Management work</CardHeader>
+            <CardHeader color="custom"> Management work</CardHeader>
             <CardBody align="justify">
               I supervise and manage the team which works on the firmware.
               <IconButton>

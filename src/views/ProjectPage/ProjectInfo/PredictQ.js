@@ -41,23 +41,23 @@ export default function PredictQ(props) {
   return (
     <div>
       <GridContainer container spacing={6} justify="center">
-        <GridItem xs={12} sm={6} md={3}>
+        <GridItem xs={12} sm={6} md={6}>
           <Box borderColor="grey.300" borderRadius="5%" border={1}>
             <img alt="..." src={P1} className={navImageClasses} />
           </Box>
         </GridItem>
 
-        <GridItem xs={12} sm={6} md={3}>
+        <GridItem xs={12} sm={6} md={6}>
           <Box borderColor="grey.300" borderRadius="5%" border={1}>
             <img alt="..." src={P3} className={navImageClasses} />
           </Box>
         </GridItem>
-        <GridItem xs={12} sm={6} md={3}>
+        <GridItem xs={12} sm={6} md={6}>
           <Box borderColor="grey.300" borderRadius="5%" border={1}>
             <img alt="..." src={P2} className={navImageClasses} />
           </Box>
         </GridItem>
-        <GridItem xs={8} sm={3} md={1}>
+        <GridItem xs={8} sm={3} md={2}>
           <Box borderColor="grey.300" borderRadius="5%" border={1}>
             <img alt="..." src={P4} className={navImageClasses} />
           </Box>
@@ -73,7 +73,7 @@ export default function PredictQ(props) {
       >
         <GridItem xs={11} sm={8} md={4}>
           <Card>
-            <CardHeader color="danger"> Project description</CardHeader>
+            <CardHeader color="custom"> Project description</CardHeader>
             <CardBody align="justify">
               This Web app was made for hospitals and clinics, but it’s domain
               is versatile enough to fit anywhere which requires queue
@@ -85,7 +85,7 @@ export default function PredictQ(props) {
         </GridItem>
         <GridItem xs={11} sm={8} md={4}>
           <Card>
-            <CardHeader color="danger"> My work</CardHeader>
+            <CardHeader color="custom"> My work</CardHeader>
             <CardBody align="justify">
               This was a problem statement of{" "}
               <a href="https://deepblue.co.in/about/">Project DeepBlue</a> (3

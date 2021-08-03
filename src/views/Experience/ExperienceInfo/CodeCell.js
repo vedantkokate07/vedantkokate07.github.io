@@ -33,7 +33,7 @@ export default function CodeCell(props) {
       >
         <GridItem xs={11} sm={8} md={3}>
           <Card>
-            <CardHeader color="danger">Head of CodeCell</CardHeader>
+            <CardHeader color="custom">Head of CodeCell</CardHeader>
             <CardBody align="justify">
               Youngest appointed head to the CodeCell in the history of my
               college. I was also CodeChef Campus lead(President) for my club.
@@ -42,7 +42,7 @@ export default function CodeCell(props) {
         </GridItem>
         <GridItem xs={11} sm={8} md={3}>
           <Card>
-            <CardHeader color="danger">
+            <CardHeader color="custom">
               Improving Coding Cultre of my college
             </CardHeader>
             <CardBody align="justify">
@@ -62,7 +62,7 @@ export default function CodeCell(props) {
       >
         <GridItem xs={11} sm={8} md={3}>
           <Card>
-            <CardHeader color="danger">Organizing Global events</CardHeader>
+            <CardHeader color="custom">Organizing Global events</CardHeader>
             <CardBody align="justify">
               Organized and hosted 2 Global long contest with 5000+ participant
               combined, one of the largest Woman’s Coding Contest and offline
@@ -72,7 +72,7 @@ export default function CodeCell(props) {
         </GridItem>
         <GridItem xs={11} sm={8} md={3}>
           <Card>
-            <CardHeader color="danger">Main Speaker for events</CardHeader>
+            <CardHeader color="custom">Main Speaker for events</CardHeader>
             <CardBody align="justify">
               Keynote Speaker for Algo Talks. Principal speaker and organizer
               for various small size events for the club too.

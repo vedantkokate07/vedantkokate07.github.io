@@ -16,7 +16,7 @@ const profilePageStyle = {
   description: {
     margin: "1.071rem auto 0",
     maxWidth: "600px",
-    color: "#999",
+    color: "#EDEDED",
     textAlign: "center !important",
   },
   name: {
@@ -31,6 +31,7 @@ const profilePageStyle = {
   mainRaised: {
     margin: "-60px 30px 0px",
     borderRadius: "6px",
+    background:"#171717",
     boxShadow:
       "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)",
   },
@@ -41,6 +42,7 @@ const profilePageStyle = {
     marginTop: "30px",
     minHeight: "32px",
     textDecoration: "none",
+    color: "#EDEDED"
   },
   socials: {
     marginTop: "0",

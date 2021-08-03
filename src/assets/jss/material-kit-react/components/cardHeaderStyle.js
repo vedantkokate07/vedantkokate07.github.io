@@ -4,16 +4,18 @@ import {
   dangerCardHeader,
   infoCardHeader,
   primaryCardHeader,
+  customCardHeader,
+  roseCardHeader,
 } from "assets/jss/material-kit-react.js";
 const cardHeaderStyle = {
   cardHeader: {
-    borderRadius: "3px",
+    borderRadius: "20px",
     padding: "1rem 15px",
-    marginLeft: "15px",
-    marginRight: "15px",
-    marginTop: "-30px",
-    border: "0",
-    marginBottom: "0",
+    // marginLeft: "15px",
+    // marginRight: "15px",
+    // marginTop: "-30px",
+    // border: "0",
+    // marginBottom: "0",
   },
   cardHeaderPlain: {
     marginLeft: "0px",
@@ -24,6 +26,8 @@ const cardHeaderStyle = {
   dangerCardHeader,
   infoCardHeader,
   primaryCardHeader,
-};
-
+  customCardHeader,
+  roseCardHeader,
+};  
+  
 export default cardHeaderStyle;

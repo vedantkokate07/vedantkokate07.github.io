@@ -38,7 +38,7 @@ export default function ExperiencePage(props) {
   );
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
   return (
-    <div>
+    <div style={{backgroundColor:"black"}}>
       <Header
         color="transparent"
         brand=""
@@ -53,7 +53,7 @@ export default function ExperiencePage(props) {
       <Parallax
         small
         filter
-        image={require("assets/img/profile-bg.jpg").default}
+        image={require("assets/img/backround/i13.png").default}
       />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div >
@@ -76,7 +76,7 @@ export default function ExperiencePage(props) {
               <GridItem xs={12} sm={12} md={12}  className={classes.navWrapper}>
                 <NavPills
                   alignCenter
-                  color="warning"
+                  color="custom"
                   
                   tabs={[
                     {

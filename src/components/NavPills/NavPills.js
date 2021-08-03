@@ -114,6 +114,7 @@ NavPills.propTypes = {
     "success",
     "info",
     "rose",
+    "custom"
   ]),
   horizontal: PropTypes.shape({
     tabsGrid: PropTypes.object,

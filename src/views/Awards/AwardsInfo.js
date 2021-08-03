@@ -38,7 +38,7 @@ export default function AwardInfo(props) {
       >
         <GridItem xs={11} sm={8} md={4}>
           <Card>
-            <CardHeader color="danger">
+            <CardHeader color="custom">
               AIR 273 in Google Hash Code 2021
             </CardHeader>
             <CardBody align="justify">
@@ -59,7 +59,7 @@ export default function AwardInfo(props) {
         </GridItem>
         <GridItem xs={11} sm={8} md={4}>
           <Card>
-            <CardHeader color="danger">
+            <CardHeader color="custom">
               1st Rank and best UI in Code Adventure 3.0
             </CardHeader>
             <CardBody align="justify">
@@ -88,7 +88,7 @@ export default function AwardInfo(props) {
       >
         <GridItem xs={11} sm={8} md={4}>
           <Card>
-            <CardHeader color="warning">
+            <CardHeader color="custom">
               3rd Rank in VCET Hackathon 2021
             </CardHeader>
             <CardBody align="justify">
@@ -107,7 +107,7 @@ export default function AwardInfo(props) {
         </GridItem>
         <GridItem xs={11} sm={8} md={4}>
           <Card>
-            <CardHeader color="warning">
+            <CardHeader color="custom">
               Top 99.4 percentile on Project Euler
             </CardHeader>
             <CardBody align="justify">
@@ -133,7 +133,7 @@ export default function AwardInfo(props) {
       >
         <GridItem xs={11} sm={8} md={4}>
           <Card>
-            <CardHeader color="danger">
+            <CardHeader color="custom">
               Global rank 273 May Cook-Off 2020 Division 2
             </CardHeader>
             <CardBody align="justify">
@@ -152,7 +152,7 @@ export default function AwardInfo(props) {
         </GridItem>
         <GridItem xs={11} sm={8} md={4}>
           <Card>
-            <CardHeader color="danger">
+            <CardHeader color="custom">
               Global rank 274 June Challenge 2020 Division 2
             </CardHeader>
             <CardBody align="justify">

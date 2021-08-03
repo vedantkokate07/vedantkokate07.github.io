@@ -35,7 +35,7 @@ export default function AwardsPage(props) {
   );
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
   return (
-    <div>
+    <div style={{backgroundColor:"black"}}>
       <Header
         color="transparent"
         brand=""
@@ -50,7 +50,7 @@ export default function AwardsPage(props) {
       <Parallax
         small
         filter
-        image={require("assets/img/profile-bg.jpg").default}
+        image={require("assets/img/backround/i13.png").default}
       />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div >

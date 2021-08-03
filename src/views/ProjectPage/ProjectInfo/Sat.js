@@ -54,7 +54,7 @@ export default function Sat(props) {
       >
         <GridItem xs={11} sm={8} md={4}>
           <Card>
-            <CardHeader color="danger"> Project description</CardHeader>
+            <CardHeader color="custom"> Project description</CardHeader>
             <CardBody align="justify">
               BeliefSat is a 2p-PocketQube standard student nano-satellite being
               developed by the undergraduate students of K.J.Somaiya Institute
@@ -75,7 +75,7 @@ export default function Sat(props) {
         </GridItem>
         <GridItem xs={11} sm={8} md={4}>
           <Card>
-            <CardHeader color="danger"> My work</CardHeader>
+            <CardHeader color="custom"> My work</CardHeader>
             <CardBody align="justify">
               I have worked on building the firmware from scratch for the
               satellite. We have used Arduino Uno. Many of the libraries of
