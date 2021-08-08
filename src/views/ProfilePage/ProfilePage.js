@@ -23,7 +23,7 @@ import CardHeader from "components/Card/CardHeader.js";
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 import blackcloth from "assets/img/blackcloth.jpg";
 const useStyles = makeStyles(styles);
-import Footer from "components/Footer/Footer";
+// import Footer from "components/Footer/Footer";
 export default function ProfilePage(props) {
   const classes = useStyles();
   const classes2 = useStyles2();
@@ -143,7 +143,7 @@ export default function ProfilePage(props) {
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -6,14 +6,10 @@ import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 import Camera from "@material-ui/icons/Camera";
+import FunctionsIcon from '@material-ui/icons/Functions';
 import Palette from "@material-ui/icons/Palette";
 import Favorite from "@material-ui/icons/Favorite";
-import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
-import { GiFarmTractor } from "react-icons/gi";
-import { SiProbot} from "react-icons/si";
-import { FaSatellite} from "react-icons/fa";
-import { BiTime} from "react-icons/bi";
-
+import { SiHackerrank, SiCodechef} from "react-icons/si";
 
 // core components
 import Header from "components/Header/Header.js";
@@ -27,16 +23,14 @@ import Parallax from "components/Parallax/Parallax.js";
 import profile from "assets/img/faces/vedant1.jpg";
 
 
-import Agripool from "./ProjectInfo/Agripool";
-import CMS from "./ProjectInfo/CMS"
-import PredictQ from "./ProjectInfo/PredictQ";
-import Sat from "./ProjectInfo/Sat"
-import DRL from "./ProjectInfo/DRL";
+import CodeChef from "./CodeChef/CodeChef";
+import ProjectEuler from "./Project Euler/Project Euler";
+import Hackerrank from "./Hackerrank/Hackerrank";
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 
 const useStyles = makeStyles(styles);
 
-export default function ProjectPage(props) {
+export default function CP(props) {
   const classes = useStyles();
   const { ...rest } = props;
   const imageClasses = classNames(
@@ -81,8 +75,7 @@ export default function ProjectPage(props) {
             </GridContainer>
             <div className={classes.description}>
               <p>
-                I have worked on various projects, 
-                here is the details of my previous projects as well as my current projects.
+                My Competitive Coding backround
               </p>
             </div>
             <GridContainer justify="center" algin="center">
@@ -93,40 +86,54 @@ export default function ProjectPage(props) {
                   
                   tabs={[
                     {
-                      tabButton: "AgriPool",
-                      tabIcon: GiFarmTractor,
+                      tabButton: "CodeChef",
+                      tabIcon: SiCodechef,
                       tabContent: (
-                        <Agripool/>
+                        <CodeChef/>
                       ),
                     },
                     {
-                      tabButton: "CMS",
-                      tabIcon: AttachMoneyIcon,
-                      tabContent: (<CMS/>
+                      tabButton: "Project Euler",
+                      tabIcon:FunctionsIcon,
+                      tabContent: (
+                        <ProjectEuler/>
                       ),
                     },
                     {
-                      tabButton: "Auditory Analysis Using DRL",
-                      tabIcon: SiProbot,
+                      tabButton: "Hackerrank",
+                      tabIcon: SiHackerrank,
                       tabContent: (
-                        <DRL/>
+                        <Hackerrank/>
                       ),
                     },
+                    // {
+                    //   tabButton: "CMS",
+                    //   tabIcon: Favorite,
+                    //   tabContent: (<CMS/>
+                    //   ),
+                    // },
+                    // {
+                    //   tabButton: "Auditory Analysis Using DRL",
+                    //   tabIcon: Camera,
+                    //   tabContent: (
+                    //     <DRL/>
+                    //   ),
+                    // },
                     
-                    {
-                      tabButton: "PredictQ",
-                      tabIcon: BiTime,
-                      tabContent: (
-                        <PredictQ/>
-                      ),
-                    },
-                    {
-                      tabButton: "Firmware for Student Sat",
-                      tabIcon: FaSatellite,
-                      tabContent: (
-                        <Sat/>
-                      ),
-                    },
+                    // {
+                    //   tabButton: "PredictQ",
+                    //   tabIcon: Palette,
+                    //   tabContent: (
+                    //     <PredictQ/>
+                    //   ),
+                    // },
+                    // {
+                    //   tabButton: "Firmware for Student Sat",
+                    //   tabIcon: Favorite,
+                    //   tabContent: (
+                    //     <Sat/>
+                    //   ),
+                    // },
                   
                   ]}
                 />

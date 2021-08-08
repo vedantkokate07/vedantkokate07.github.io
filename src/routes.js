@@ -9,7 +9,9 @@ import Profile from "./views/ProfilePage/ProfilePage"
 import Project from "./views/ProjectPage/ProjectPage"
 import Experience from "./views/Experience/ExperiencePage"
 import Awards from "./views/Awards/AwardsPage"
-import Working from "views/Working";
+// import Working from "views/Working";
+// import ApexChart from "views/Testing/Demo";
+import CP from "views/CP/CP";
 //
 
 // ----------------------------------------------------------------------
@@ -26,8 +28,11 @@ export default function Rout() {return(<Router>
         <Awards />
       </Route>
       <Route path="/cp">
-        <Working />
+        <CP/>
       </Route>
+      {/* <Route path="/testing">
+        <ApexChart/>
+      </Route> */}
       <Route path="/">
         <Profile />
       </Route>

@@ -32,7 +32,7 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list}>
-      <ListItem className={classes.listItem}>
+      {/* <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
           buttonText="Pages"
@@ -60,7 +60,33 @@ export default function HeaderLinks(props) {
             ,
           ]}
         />
+      </ListItem> */}
+      <ListItem className={classes.listItem}>
+      <Link to="/" >
+          <Button color="rose">Home</Button>
+        </Link>
       </ListItem>
+      <ListItem className={classes.listItem}>
+        <Link to="/project-page">
+          <Button color="rose">Projects</Button>
+        </Link>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Link to="/awards-page">
+          <Button color="rose">Awards</Button>
+        </Link>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Link to="/experience-page">
+          <Button color="rose">Experience</Button>
+        </Link>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Link to="/cp">
+          <Button color="rose">Competitive Programming</Button>
+        </Link>
+      </ListItem>
+
 
       <ListItem className={classes.listItem}>
         <Tooltip
@@ -86,9 +112,13 @@ export default function HeaderLinks(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <IconButton color="secondary" size="medium" component="span">
-            <LinkedIn onClick={() =>
-                window.open("https://www.linkedin.com/in/vedant-kokate-723030182/")
-              }/>
+            <LinkedIn
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/vedant-kokate-723030182/"
+                )
+              }
+            />
           </IconButton>
         </Tooltip>
       </ListItem>
@@ -100,9 +130,9 @@ export default function HeaderLinks(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <IconButton color="secondary" size="medium" component="span">
-            <GitHub onClick={() =>
-                window.open("https://github.com/vedantkokate07")
-              }/>
+            <GitHub
+              onClick={() => window.open("https://github.com/vedantkokate07")}
+            />
           </IconButton>
         </Tooltip>
       </ListItem>
@@ -114,9 +144,9 @@ export default function HeaderLinks(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <IconButton color="secondary" size="medium" component="span">
-            <MailOutline onClick={() =>
-                window.open("mailto:vedant.kokate@somaiya.com")
-            }/>
+            <MailOutline
+              onClick={() => window.open("mailto:vedant.kokate@somaiya.com")}
+            />
           </IconButton>
         </Tooltip>
       </ListItem>

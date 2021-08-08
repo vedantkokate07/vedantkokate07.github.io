@@ -9,7 +9,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 
-
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 import CardHeader from "components/Card/CardHeader.js";
@@ -34,8 +33,11 @@ export default function Education(props) {
           <Card>
             <CardHeader color="custom">Engineering</CardHeader>
             <CardBody align="justify">
-              I am currently in my last year of Bachelor of Information
-              Technology with average CGPA for last 3 years at 8.17
+              <li>
+                I am currently in my last year of Bachelor of Information
+                Technology{" "}
+              </li>
+              <li>My average CGPA for last 3 years is 8.17</li>
             </CardBody>
           </Card>
         </GridItem>
@@ -43,7 +45,11 @@ export default function Education(props) {
           <Card>
             <CardHeader color="custom">12th Standard</CardHeader>
             <CardBody align="justify">
-            78 percentage in my 12th Board exams
+              <li>
+                Studied in HSC(Maharashtra State Board Of Secondary And Higher
+                Secondary Education){" "}
+              </li>
+              <li>Scored 78 percentage in my 12th Board exams.</li>
             </CardBody>
           </Card>
         </GridItem>
@@ -51,7 +57,10 @@ export default function Education(props) {
           <Card>
             <CardHeader color="custom">10th Standard</CardHeader>
             <CardBody align="justify">
-            90 percentage in my 10th Board exams
+              <li>
+                Studied in ICSE (Indian Certificate of Secondary Education)
+              </li>
+              <li>Scored 90 percentage in my 10th Board exams.</li>
             </CardBody>
           </Card>
         </GridItem>

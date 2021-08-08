@@ -46,7 +46,7 @@ export default function AwardInfo(props) {
               World’s best coders compete here. More Info
               <IconButton>
                 <AiFillGoogleCircle
-                  // color="green"
+                  color="#00bcd4"
                   onClick={() =>
                     window.open(
                       "https://codingcompetitions.withgoogle.com/hashcode/about"
@@ -67,7 +67,7 @@ export default function AwardInfo(props) {
               theme was fintech. More Info.
               <IconButton>
                 <AiOutlineInfoCircle
-                  color="primary"
+                  color="#00bcd4"
                   onClick={() =>
                     window.open(
                       "https://www.linkedin.com/in/vcet-hackathon/?originalSubdomain=in"
@@ -96,7 +96,7 @@ export default function AwardInfo(props) {
               topic for the hackathon.
               <IconButton>
                 <AiOutlineInfoCircle
-                  color="primary"
+                 color="#00bcd4"
                   onClick={() =>
                     window.open("https://riidl.org/programs/code_adventure")
                   }
@@ -116,7 +116,7 @@ export default function AwardInfo(props) {
               million people have solved at least one problem over there.
               <IconButton>
                 <AiOutlineInfoCircle
-                  color="primary"
+                  color="#00bcd4"
                   onClick={() => window.open("https://projecteuler.net/")}
                 />
               </IconButton>
@@ -141,7 +141,7 @@ export default function AwardInfo(props) {
               10-12K participants.
               <IconButton>
                 <SiCodechef
-                  color="primary"
+                  color="#00bcd4"
                   onClick={() =>
                     window.open("https://www.codechef.com/users/vedant_k07")
                   }
@@ -160,7 +160,7 @@ export default function AwardInfo(props) {
               10-12K participants.
               <IconButton>
                 <SiCodechef
-                  color="primary"
+                  color="#00bcd4"
                   onClick={() =>
                     window.open("https://www.codechef.com/users/vedant_k07")
                   }

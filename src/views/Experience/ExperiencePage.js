@@ -8,10 +8,14 @@ import { makeStyles } from "@material-ui/core/styles";
 import Camera from "@material-ui/icons/Camera";
 import Palette from "@material-ui/icons/Palette";
 import Favorite from "@material-ui/icons/Favorite";
+import {IoMdInfinite} from "react-icons/io";
+import {GiSpaceSuit,GiBookshelf} from "react-icons/gi";
+
+
+// IoMdInfinite
 // core components
 import Header from "components/Header/Header.js";
-import Footer from "components/Footer/Footer.js";
-import Button from "components/CustomButtons/Button.js";
+
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
@@ -81,20 +85,20 @@ export default function ExperiencePage(props) {
                   tabs={[
                     {
                       tabButton: "Code Cell",
-                      tabIcon: Camera,
+                      tabIcon: IoMdInfinite,
                       tabContent: (
                         <CodeCell/>
                       ),
                     },
                     {
                       tabButton: "Space Program",
-                      tabIcon: Favorite,
+                      tabIcon: GiSpaceSuit,
                       tabContent: (<Sat/>
                       ),
                     },
                     {
                       tabButton: "Education",
-                      tabIcon: Camera,
+                      tabIcon:GiBookshelf,
                       tabContent: (
                         <Education/>
                       ),
